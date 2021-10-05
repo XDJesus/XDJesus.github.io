@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>First Object</title>
+
+    <style>
+
+      body {
+        background-color: green;
+      }
+
+    </style>
+
+    <script>
+
+    	var myArray = ['Why', 'Hello', 'there'];
+    	alert(myArray[1]);
+
+    	var hair = {
+    		name: "Xavier",
+    		age: 27,
+    		color: "brown", 
+    		length: "short", 
+    		type: "wavy"};
+
+
+    	function aboutme(num){
+
+        text = ["I like video games", "I love pizza"]
+      switch(num){
+        case 0:
+      alert(text[0]);
+      break;
+        case 1:
+      alert(text[1]);
+      break;
+      } 
+
+    }
+
+    	
+
+
+    	function hairType(name, age, color, length, type) {
+    		this.name = name;
+    		this.age = age;
+    		this.color = color;
+    		this.length = length;
+    		this.type = type;
+    		this.notice = function() {
+    			alert(this.name + " has " + color + "hair");
+    		}
+    	}
+
+
+    	
+    	var xavierHair = new hairType('Xavier', 27, 'brown', 'short', 'wavy');
+
+  
+    	console.log(xavierHair);
+
+
+    	alert(xavierHair.name);
+    	xavierHair.notice();
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+  </head>
+
+  <body>
+
+    <button onclick="aboutme(0)">Know More</button>
+
+    <button onclick="aboutme(1)">Favorite Food</button>
+
+  </body>
+
+ </html> 
